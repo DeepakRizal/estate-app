@@ -15,6 +15,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please enter your password"],
     },
+    avatar: {
+      type: String,
+      default:
+        "https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png",
+    },
   },
   { timestamps: true }
 );
